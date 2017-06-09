@@ -21,17 +21,17 @@ USE `react_crud_db`;
 DROP TABLE IF EXISTS `employees`;
 
 CREATE TABLE `employees` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(100) NOT NULL,
-  `age` int(5) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `password` varchar(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `age` int(11) NOT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
 
 /*Data for the table `employees` */
 
-insert  into `employees`(`id`,`name`,`age`,`email`,`password`) values (2,'ayush',22,'goyal.ayush@yash.com','yash1234'),(3,'shubham',22,'shubham.likhar@yash.com','yash1234'),(4,'fdf',434,'goyal.ayush@yash.comre','yash1234er'),(5,'kjkjhkjh',45,'goyal.ayush@yash.com4','yash1234'),(6,'sadsad',32,'goyal.ayush@yash.comeee','yash1234'),(7,'sadsad',32,'goyal.ayush@yash.tt','yash1234tt'),(8,'as',21,'goyal.ayush@yash.com','yash1234'),(9,'asd',32,'','');
+insert  into `employees`(`id`,`age`,`email`,`name`,`password`) values (10,32,'goyal.ayush@yash.com','asd','yash1234'),(12,43,'goyal.ayush@yash.com','dfds','yash1234');
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
