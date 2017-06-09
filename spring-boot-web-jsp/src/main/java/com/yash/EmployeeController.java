@@ -42,8 +42,11 @@ public class EmployeeController {
 	}
 
 	@DeleteMapping(value = "/employees/{id}")
-	public void deleteEmployee(@PathVariable("id") int id) {
-		// employeeService.deleteEmployee(id);
+	public void deleteEmployee(@PathVariable("id") long id) {
+		System.out
+				.println("----------------------------in delete -----------------------");
+
+		newEmployeeDao.delete(id);
 	}
 
 }

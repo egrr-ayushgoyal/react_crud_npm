@@ -23,3 +23,12 @@ ul.header {
     padding: 20px;
     display: inline-block;
 }
+.error{
+    text-align: center;
+    color: red;
+}
+
+.success{
+    text-align: center;
+    color: blue;
+}
