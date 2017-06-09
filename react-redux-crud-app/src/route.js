@@ -1,7 +1,8 @@
 import { Switch, Route } from 'react-router-dom'
-import AddEmployee from './components/employees/add-employee-components'
-import ViewEmployee from './components/employees/view-employee-components'
+import AddEmployee from './components/employees/add-employee-container'
+import ViewEmployee from './components/employees/view-employee-container'
 import React,{Component} from 'react';
+import ModalRoot from './components/common/root-modal';
 
 
 const Home = () => (
@@ -19,6 +20,7 @@ const MainRoutes = () => (
             <Route path='/addEmployee' component={AddEmployee}/>
             <Route path='/viewEmployee' component={ViewEmployee}/>
         </Switch>
+        <ModalRoot/>
     </main>
 )
 

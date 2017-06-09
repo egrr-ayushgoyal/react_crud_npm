@@ -1,30 +1,11 @@
 import * as types from './action-types'
 
-export function addEmployee(employeeData){
-    return {
-        type : types.ADD_EMPLOYEE,
-        employeeData : employeeData
-    };
-}
-/*
-
-
-export function getAllEmployees(){
-    return {
-        type : types.GET_EMPLOYEES
-    };
-}
-*/
-
-
 export function getAllEmployeesSuccess(employees){
     return {
         type : types.GET_EMPLOYEES_SUCCESS,
         employees
     };
 }
-
-/*
 
 export function addEmployeeSuccess(message){
     return {
@@ -40,16 +21,19 @@ export function addEmployeeFailure(message){
     };
 }
 
-export function getEmployeesSuccess(employees){
+export function deleteEmployeeSuccess(message){
     return {
-        type : types.GET_EMPLOYEES_SUCCESS,
-        employees
+        type : types.DELETE_EMPLOYEE_SUCCESS,
+        message
     };
 }
 
-export function getEmployeesFailure(message){
+export function deleteEmployeeFailure(message){
     return {
-        type : types.GET_EMPLOYEES_FAILURE,
+        type : types.DELETE_EMPLOYEE_FAILURE,
         message
     };
-}*/
+}
+
+
+
